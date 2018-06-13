@@ -283,4 +283,4 @@ bot.on("message", async function(message) {
     }
 });
 
-bot.login("NDU1Nzk1NDA2MDA2Mzg2NzA5.DgJ0jQ.sAVCnxya3ycsidsC0a05ROJFvZE");
+bot.login(process.env.TOKEN);
