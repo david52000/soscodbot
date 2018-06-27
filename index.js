@@ -30,12 +30,12 @@ bot.on("ready", function() {
 
 bot.on("guildMemberAdd", function(member) {
     let role = member.guild.roles.find("name", "🎮 | Membre");
-    member.guild.channels.find("name", "tchat-general").sendMessage(member.toString() + " Bienvenue sur le Discord, installe toi tranquillement ! ");
+    member.guild.channels.find("name", "✖bienvenue✖").sendMessage(member.toString() + " Bienvenue sur le Discord, installe toi tranquillement ! ");
     member.addRole(role);
 });
 
 bot.on("guildMemberRemove", function(member) {
-    member.guild.channels.find("name", "tchat-general").sendMessage(member.toString() + " Dommage, il est parti, bye ! " + member.toString() );
+    member.guild.channels.find("name", "✖bienvenue✖").sendMessage(member.toString() + " Dommage, il est parti, bye ! " + member.toString() );
 });
 
 bot.on("message", async function(message) {
